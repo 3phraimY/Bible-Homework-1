@@ -11,6 +11,7 @@ public class Main {
 	public static int numOfYears(long population, long startingDisciples, int trainAtTime)
 	{
 		int years = 0;
+		int yearsToConvert = 3;
 		long disciples = startingDisciples;
 		//loops until disciples are greater than total population
 		while(population > disciples)
@@ -18,7 +19,7 @@ public class Main {
 			//each disciple trains an additional # = how many can train at once
 			disciples = disciples + disciples* trainAtTime;
 			//this training takes 3 years
-			years = years + 3;
+			years = years + yearsToConvert;
 		}
 		return years;
 	}
