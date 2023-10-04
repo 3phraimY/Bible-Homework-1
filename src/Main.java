@@ -2,8 +2,8 @@
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println(numOfYears(7700000000000L,13L,2));
-		System.out.println(howManyToTrain(7700000000000L,13L,50));
+		System.out.println(numOfYears(7700000000L,13L,2));
+		System.out.println(howManyToTrain(7700000000L,13L,50));
 	}
 	//solves for number of years it will take for all of population to be disciples
 	//takes in the population, how many disciples to start, and how many people each disciple can train at once
@@ -18,7 +18,7 @@ public class Main {
 		{
 			//each disciple trains an additional # = how many can train at once
 			disciples = disciples + disciples* trainAtTime;
-			//this training takes 3 years
+			//this training takes yearsToConvert years
 			years = years + yearsToConvert;
 		}
 		return years;
